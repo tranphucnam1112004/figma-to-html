@@ -3,7 +3,7 @@
 }
 :root {
   --font-heading: "Sen", sans-serif;
-  --btn-color-cta: #ffb900;
+  --primary-color: #ffb900;
 }
 html {
   font-size: 62.5%;
@@ -15,6 +15,14 @@ body {
 /* =================== common =================== */
 a {
   text-decoration: none;
+}
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
 }
 .btn {
   display: inline-block;
@@ -187,7 +195,7 @@ a {
 .hero-cta {
   min-width: 180px;
   line-height: 64px;
-  background-color: var(--btn-color-cta);
+  background-color: var(--primary-color);
 }
 .hero .watch-video {
   border: none;
@@ -230,4 +238,42 @@ a {
 }
 .hero .stat strong + strong {
   margin-left: 28px;
+}
+/* =================== popular =================== */
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular .description {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  margin-top: 16px;
+  max-width: 458px;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular .control-btn {
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 99999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.popular .control-btn:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: white;
 }
